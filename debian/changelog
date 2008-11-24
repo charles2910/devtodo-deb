@@ -1,0 +1,377 @@
+devtodo (0.1.20-3) unstable; urgency=low
+
+  * orphaned: set Maintainer to QA
+
+ -- Arthur Korn <arthur@debian.org>  Mon, 24 Nov 2008 18:18:23 +0100
+
+devtodo (0.1.20-2) unstable; urgency=low
+
+  * removed debian/conffiles as the conffile list is now created by
+    dh_installdeb.
+
+ -- Arthur Korn <arthur@debian.org>  Sun, 13 Jan 2008 13:55:17 +0100
+
+devtodo (0.1.20-1) unstable; urgency=low
+
+  * New upstream release, closes: #457950
+    - todoterm.cc now includes cstdlib, closes: #417152
+  * standards-version 3.7.3.0 without changes
+  * debhelper compat version updated to v6
+    - using dh_installman instead of dh_installmanpages
+
+ -- Arthur Korn <arthur@debian.org>  Sat, 12 Jan 2008 00:20:51 +0100
+
+devtodo (0.1.19-4) unstable; urgency=low
+
+  * Added #include <cstdlib> for gcc-4.3, thanks Martin Michlmayr,
+    closes: #417152
+
+ -- Arthur Korn <arthur@debian.org>  Thu, 08 Nov 2007 21:11:32 +0100
+
+devtodo (0.1.19-3) unstable; urgency=low
+
+  * remove duplicate mention of the -c option in the manpage, closes: #408997
+  * Standards-Version 3.7.2.2 without changes
+
+ -- Arthur Korn <arthur@debian.org>  Mon, 12 Feb 2007 21:37:10 +0100
+
+devtodo (0.1.19-2) unstable; urgency=low
+
+  * Strip class qualification from member in declaration to make G++ 4.1 happy,
+    closes: #355987
+  * Standards-Version 3.6.2.0 -> 3.7.2.0 without changes
+
+ -- Arthur Korn <arthur@debian.org>  Thu, 25 May 2006 11:31:34 +0200
+
+devtodo (0.1.19-1) unstable; urgency=low
+
+  * New upstream release
+  * autoupdate with autoconf 1.9 and libtool 1.5.6
+
+ -- Arthur Korn <arthur@debian.org>  Sun, 17 Jul 2005 14:37:52 +0200
+
+devtodo (0.1.18-3) unstable; urgency=low
+
+  * Standards version 3.6.1.0 -> 3.6.2.0 without changes.
+  * links: contrib stuff is in /usr/share now, not /usr/lib, closes: #313627
+  * todorc: end all format strings with at least one \n, closes: #313629
+  * g++4: apply patch from Andreas Jochens to make it build with g++ 4.0,
+    closes: #315116
+
+ -- Arthur Korn <arthur@debian.org>  Sun, 17 Jul 2005 14:10:03 +0200
+
+devtodo (0.1.18-2) unstable; urgency=low
+
+  * devtodo.1: removed duplicated --comment doc
+  * copyright: fixed upstream email address, closes: #287773
+  * TodoDB.cc(752): swap calls to erase() and t->db->setDirty(), so the latter
+    is actually called on an existing object. Thanks a lot to Wesley J.
+    Landaker and the other folks from debian-amd64@l.d.o for tracking this
+    down. closes: #307226
+
+ -- Arthur Korn <arthur@debian.org>  Sat,  7 May 2005 13:10:59 +0200
+
+devtodo (0.1.18-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Arthur Korn <arthur@debian.org>  Mon,  6 Sep 2004 01:16:31 +0200
+
+devtodo (0.1.17-7) unstable; urgency=low
+
+  * Improved description, fixed grammatical flaws, closes: #268500
+
+ -- Arthur Korn <arthur@korn.ch>  Sat, 28 Aug 2004 12:51:37 +0200
+
+devtodo (0.1.17-6) unstable; urgency=low
+
+  * configure.in: using AM_MAINTAINER_MODE to avoid rebuilding of Makefiles
+    after patching (timestamp skew), closes: #267982
+  * rules: set CXXFLAGS not CFLAGS, export CXXFLAGS.
+
+ -- Arthur Korn <arthur@korn.ch>  Wed, 25 Aug 2004 16:06:39 +0200
+
+devtodo (0.1.17-5) unstable; urgency=low
+
+  * configure.in: AC_CHECK_FUNCS( ... strftime) broken due to g++ error.
+    Using workaround stolen from fluxbox. closes: #236012
+  * devtodo.1: removed %C from manpage as suggested by Alec, closes: #238576
+  * devtodo.1: changed references to "--format-date" to the correct
+    "--date-format", closes: #236011
+
+ -- Arthur Korn <arthur@korn.ch>  Wed, 25 Aug 2004 11:55:52 +0200
+
+devtodo (0.1.17-4) unstable; urgency=low
+
+  * modified manpage to no longer refer to "tdl", instead use "todo --link"
+    (tdl has a file name conflict with the tdl package, and is rarely used).
+    closes: #262042
+
+ -- Arthur Korn <arthur@korn.ch>  Wed, 25 Aug 2004 10:34:08 +0200
+
+devtodo (0.1.17-3) unstable; urgency=low
+
+  * Standards-Version: 3.6.1.0 without changes
+  * watch: removed it, it just wouldn't work
+  * upstream URL changed
+
+ -- Arthur Korn <arthur@korn.ch>  Fri, 19 Mar 2004 11:03:10 +0100
+
+devtodo (0.1.17-2) unstable; urgency=low
+
+  * Applied patch from Jakob Hilmer <jakob@hilmer.dk> and Nicolas Boullis
+    <Nicolas.Boullis@free.fr> to fix the C++ wrt gcc 3.3, closes: #195195
+  * Standards-Version: 3.5.8 => 3.5.10 without changes.
+
+ -- Arthur Korn <arthur@korn.ch>  Tue,  1 Jul 2003 16:41:03 +0200
+
+devtodo (0.1.17-1) unstable; urgency=low
+
+  * New upstream release
+    - new priority "default"
+  * debian/todorc: added comments on default priority.
+
+ -- Arthur Korn <arthur@korn.ch>  Fri, 27 Dec 2002 17:54:23 +0100
+
+devtodo (0.1.16-3) unstable; urgency=low
+
+  * src/TodoDB.cc ~line 1010 (wdiff format):
+        if (clr[0] == '+') {
+                a = ::bold;
+                clr = colour.substr(1);
+        } [-else-]
+        if (clr == "black") c = ::black;
+    closes: #173904
+
+ -- Arthur Korn <arthur@korn.ch>  Fri, 27 Dec 2002 13:34:08 +0100
+
+devtodo (0.1.16-2) unstable; urgency=low
+
+  * moved contrib/ to /usr/lib/
+  * s[/home/alec/src/todo/stable/contrib/][/usr/lib/devtodo/] in debian/todorc,
+    closes: #173907
+  * Suggest: xsltproc for stylesheets, added blimp about todo2html.xslt to
+    the Description.
+  * s/%@/$@/ in doc/scripts.sh, closes: #173909
+
+ -- Arthur Korn <arthur@korn.ch>  Mon, 23 Dec 2002 11:35:48 +0100
+
+devtodo (0.1.16-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Arthur Korn <arthur@korn.ch>  Thu, 19 Dec 2002 13:06:08 +0100
+
+devtodo (0.1.15-2) unstable; urgency=low
+
+  * removing usr/bin/tdl and the tdl manpage because of conflict with the
+    tdl package, closes: #173564, #173566
+  * using symlink method described in autotools-dev/README.Debian for
+    config.sub and config.guess, Build-Depend on autotools-dev
+  * Added debian/README
+  * setting CFLAGS on ./configure instead on $(MAKE).
+
+ -- Arthur Korn <arthur@korn.ch>  Thu, 19 Dec 2002 00:53:29 +0100
+
+devtodo (0.1.15-1) unstable; urgency=low
+
+  * New upstream release
+    - Added --force-colour option to force use of colour even when not
+      outputting to a terminal. Requested by James Troup. closes: #170959
+    - Fixed bug when displaying priorities in TODO list ("mediumriority").
+      reference: #155840
+    - tda will now merge all non-quoted arguments into one string to be used
+      for the body text of the item to add. This lets this work:
+      tda -p high Need to go to the shop and get some milk
+      without needing to do:
+      tda -p high "Need to go to the shop and get some milk"
+      closes: #155841
+  * copyright: Corrected from GPL to GPLv2
+  * control: removed superfluous build dependency on libtool
+  * dirs: create usr/share/man/man1 for doc/Makefile
+
+ -- Arthur Korn <arthur@korn.ch>  Tue, 17 Dec 2002 13:47:52 +0100
+
+devtodo (0.1.14-2) unstable; urgency=low
+
+  * replaced --sysconfdir=$${prefix}/../etc with --sysconfdir=/etc,
+    cause now this is substituted in the manpage, and it just looks
+    ugly there.
+  * removed emacs variables from debian/changelog
+  * added uscan watchfile
+  * ran todo -T, closes: #155840
+  * rules: made DEB_BUILD_OPTIONS policy 3.5.7 compliant
+  * control: Standars-Version: 3.5.8.0
+
+ -- Arthur Korn <arthur@korn.ch>  Wed, 11 Dec 2002 23:48:54 +0100
+
+devtodo (0.1.14-1) unstable; urgency=low
+
+  * New upstream release, closes: #170109
+    (Nice to have such alert users.)
+  * added debian/compat because of conffiles (#126520)
+
+ -- Arthur Korn <arthur@korn.ch>  Fri, 22 Nov 2002 08:02:45 +0100
+
+devtodo (0.1.13-1) unstable; urgency=low
+
+  * New upstream release
+  - new upstream URL
+  - manpage updated wrt -s/--summary, closes: #115494, #117364
+  - validity of indexes when grafting checked earlier, closes: #115498
+  - -h/--help is now implemented, closes: #100390
+  - indexes of newly added items are now echoed, closes: #115507
+  - alec pointed out that this can actually be done, closes: #117086
+  * updated config.{sub,guess}, using those from autotools-dev 20020320.1
+    closes: #134736
+  * mv /usr/share/doc/devtodo/{examples/,}contrib
+
+ -- Arthur Korn <arthur@korn.ch>  Sun,  9 Jun 2002 17:22:53 +0200
+
+devtodo (0.1.12-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Arthur Korn <arthur@korn.ch>  Sun,  2 Dec 2001 15:54:10 +0100
+
+devtodo (0.1.11-3) unstable; urgency=low
+
+  * whoops, forgot to make /etc/todorc a conffile, closes: Bug#110403.
+
+ -- Arthur Korn <arthur@korn.ch>  Fri, 31 Aug 2001 16:28:18 +0200
+
+devtodo (0.1.11-2) unstable; urgency=low
+
+  * One-line-change to fix behaviour when --colour is used, courtesy of
+    Michael Tilstra. closes: Bug#108791.
+  * New upstream http address.
+  * Fixed upstream for some time:
+    - by inclusion of regex.c from glibc into the source, closes: #100902
+    - closes: Bug#100412, Bug#103565
+
+ -- Arthur Korn <arthur@korn.ch>  Thu, 16 Aug 2001 17:01:09 +0200
+
+devtodo (0.1.11-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes some gcc 3.0 bugs, are there more? (hopefully) closes: Bug#105018
+  * make rules work with subdirs in doc/examples/ (silly chmod which made the
+    subdir's permissions 644).
+  * synced /etc/todorc with upstream.
+
+ -- Arthur Korn <arthur@korn.ch>  Thu,  9 Aug 2001 01:20:52 +0200
+
+devtodo (0.1.9-1) unstable; urgency=low
+
+  * New upstream release
+    - now uses system readline headers.
+  * Fixes in 0.1.8 (not packaged due to readline mess):
+    - Numeric priorities can now be specified on the command line.
+      picked up by Christian Kurz, closes: Bug#100412
+    - James Troup had the suggestion (which is now implemented) of clearing the
+      priority as soon as the user hits a key other than enter when editing an
+      existing item. closes: Bug#103565.
+  * Fixed in 0.1.7 (no packages, since it introduced some nasty bugs fixed
+    in 0.1.8):
+    - Finally tracked down the VERY nasty (at times up to a minute or more)
+      slowdown some users have been experiencing. It turns out that one of the
+      recent versions of glibc has a bug in its regex code when dealing with
+      non-multibyte characters (ie. most of the time). Thanks to Mark Eichen
+      for pointing me towards several Debian bug tracker items about other
+      programs having this same problem. closes: Bug#100902.
+  * added contrib/ to the examples.
+  * new upstream URL and email
+
+ -- Arthur Korn <arthur@korn.ch>  Mon,  9 Jul 2001 15:13:36 +0200
+
+devtodo (0.1.6-1-2) unstable; urgency=low
+
+  * actually, the superfluous escape sequences where fixed with the last
+    upstream release, closes: #98893
+  * pushed standards-version to 3.5.4.0, no changes required.
+
+ -- Arthur Korn <arthur@korn.ch>  Sat,  2 Jun 2001 18:43:06 +0200
+
+devtodo (0.1.6-1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Arthur Korn <arthur@korn.ch>  Sat,  2 Jun 2001 16:39:57 +0200
+
+devtodo (0.1.6-3) unstable; urgency=low
+
+  * Alec got a POP account with my hoster after the mail.com breakdown,
+    changed the upstream address in copyright.
+
+ -- Arthur Korn <arthur@korn.ch>  Sat,  2 Jun 2001 16:23:31 +0200
+
+devtodo (0.1.6-2) unstable; urgency=low
+
+  * Uncommented
+     if (options.priority != -1)
+         t.priority = options.priority;
+    in src/TodoDB.cc, which makes --priority work again.
+
+ -- Arthur Korn <arthur@korn.ch>  Wed,  9 May 2001 20:26:58 +0200
+
+devtodo (0.1.6-1) unstable; urgency=low
+
+  * New upstream release
+    - src/support.cc change wrt "paranoid" merged
+    - Makefile stuff merged
+    - DESTDIR support
+  * synced our default todorc with upstream. I keep them separate to ensure
+    consistency and have "paranoid" on by default.
+  * use DESTDIR, just for the sake of using it ... ;)
+
+ -- Arthur Korn <arthur@korn.ch>  Tue,  8 May 2001 19:30:08 +0200
+
+devtodo (0.1.5-1) unstable; urgency=low
+
+  * New upstream release
+    - missed --paranoid in 0.1.4, this is default in /etc/todorc, closes:
+      #93641
+    - 0.1.3 closes: #91809
+  * Changed src/support.cc to allow "paranoid" in todorc files.
+  * fiddled with doc/Makefile.am (missing "-" before the "test", added
+    $(manlinks)).
+
+ -- Arthur Korn <arthur@korn.ch>  Tue, 24 Apr 2001 21:58:38 +0200
+
+devtodo (0.1.4-1) unstable; urgency=low
+
+  * New upstream release, closes: #92848, #91820, #91291, #92876, see the
+    upstream changelog for details.
+  * /usr/bin/todo is now a symlink to /usr/bin/devtodo, similar for the
+    manpage.
+  * Fixed install target for /etc/todorc to create the directory first and use
+    $(sysconfdir); setting $(sysconfdir) properly in configure target of
+    debian/rules.
+
+ -- Arthur Korn <arthur@korn.ch>  Sun, 22 Apr 2001 17:39:01 +0200
+
+devtodo (0.1.3-4) unstable; urgency=low
+
+  * Finally fixed quotes in scripts.sh myself, closes: #92848
+
+ -- Arthur Korn <arthur@debian.org>  Mon,  9 Apr 2001 21:52:47 +0200
+
+devtodo (0.1.3-3) unstable; urgency=low
+
+  * Added build dependency on automake. To be removed when upstream merges my
+    changes in Makefile.am to add manpage symlinks. closes: #92328
+
+ -- Arthur Korn <arthur@korn.ch>  Sat, 31 Mar 2001 21:41:23 +0200
+
+devtodo (0.1.3-2) unstable; urgency=low
+
+  * s/priorized/prioritized/g in debian/control, closes: #91291
+
+ -- Arthur Korn <arthur@korn.ch>  Fri, 30 Mar 2001 14:57:28 +0200
+
+devtodo (0.1.3-1) unstable; urgency=low
+
+  * Initial Release. closes: #90350
+  * doc/Makefile.am: add symlinks from tda tde tdr and tdd to todo.1.
+
+ -- Arthur Korn <arthur@korn.ch>  Tue, 20 Mar 2001 22:09:35 +0100

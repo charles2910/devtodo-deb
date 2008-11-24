@@ -1,0 +1,10 @@
+README for the devtodo Debian package
+=====================================
+
+tdl is not available because of a conflict with the "tdl" package. Use
+--link to link databases.
+
+There are some format conversion and wrapper scripts in /usr/share/devtodo/ which
+you might find useful.
+
+    -- Arthur Korn <arthur@korn.ch>  Mon,  6 Sep 2004 01:12:24 +0200

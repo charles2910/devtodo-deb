@@ -1,0 +1,20 @@
+Source: devtodo
+Section: utils
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 6.0.0), autotools-dev, libreadline-dev, libncurses-dev
+Standards-Version: 3.7.3.0
+
+Package: devtodo
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: xsltproc
+Description: hierarchical, prioritised todo list manager
+ Manipulate and display a hierarchical (ie "subtasks") and prioritised
+ list of things with a coloured command line interface.
+ .
+ Using devtodos output formatting features, it is possible to convert
+ the todo list into almost any text format.
+ .
+ Devtodo comes with XSLT stylesheets to convert XML .todo files to HTML
+ and PDF, have a look at /usr/share/devtodo/.
