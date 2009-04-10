@@ -214,10 +214,8 @@ bool xmlSave(TodoDB const &todo, string const &file) {
 	if (todo.isDirty())
 	{
 	ofstream of(file.c_str());
-        if(of.fail( ) || of.bad( )) {
-            cout << "ERROR: Failed to create/open file: " << file << "\n";
-            exit(1);
-        }
+
+		if (of.bad()) return false;
 		if (options.verbose > 1)
 			cout << "todo: saving to database '" << file << "'" << endl;
 		of << "<?xml version=\"1.0\"?>" << endl;

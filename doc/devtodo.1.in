@@ -21,7 +21,7 @@ Remove the given items.
 \fBtdd \fI<indices>\fP\fP
 Mark the specified items as being done.
 .TP 
-\fBtodo --link [\-g \fI<index>\fP] \fI<database>\fP\fP
+\fBtdl [\-g \fI<index>\fP] \fI<database>\fP\fP
 Link the specified devtodo database into the current one, optionally grafting it as a child of the specified index.
 .SH "DESCRIPTION"
 .LP 

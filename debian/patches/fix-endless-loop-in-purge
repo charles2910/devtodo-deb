@@ -1,0 +1,29 @@
+it get's "stuck".
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=516604
+
+--- a/src/TodoDB.cc
++++ b/src/TodoDB.cc
+@@ -968,12 +968,11 @@
+ 
+ unsigned TodoDB::purge(multiset<Todo> &todo, time_t age) {
+ unsigned purged = 0;
+-
+-	for (multiset<Todo>::iterator i = todo.begin(); i != todo.end(); ++i) {
++	multiset<Todo>::iterator i = todo.begin();
++	while (i != todo.end()) {
+ 		if (i->done && i->doneTime < age) {
+ 		multiset<Todo>::iterator last = i++;
+-
+-			cout << i->doneTime << " < " << age << endl;
++			cout << last->doneTime << " < " << age << endl;
+ 			last->db->setDirty(true);
+ 			todo.erase(last);
+ 			++purged;
+@@ -981,6 +980,7 @@
+ 			if (i->child) {
+ 				purged += purge(*i->child, age);
+ 			}
++                        i++;
+ 		}
+ 	}
+ 	return purged;

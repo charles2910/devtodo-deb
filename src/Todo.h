@@ -8,8 +8,6 @@
 
 using namespace std;
 
-class TodoDB;
-
 /*
 	Todo is the basic data structure for each entry in the .todo database.
 

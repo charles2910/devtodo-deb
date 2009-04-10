@@ -1,3 +1,20 @@
+devtodo (0.1.20-5) unstable; urgency=low
+
+  * move everything into quilt patches
+  * debhelper 7
+    - move pieces out to debian/{clean,install}
+  * Debian Policy 3.8.1
+  * misc:Depends
+  * README.source
+  * install bash completion (Closes: #483976)
+  * fix --purge (Closes: #516604)
+  * update todo2xhtml_css (Closes: #470705)
+  * move TODO to debian/
+  * other general cleanups
+  * add Vcs-* fields
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Thu, 09 Apr 2009 22:41:49 -0700
+
 devtodo (0.1.20-4) unstable; urgency=low
 
   * Adopt package (Closes: #507418)

@@ -2,13 +2,15 @@ Source: devtodo
 Section: utils
 Priority: optional
 Maintainer: Ryan Niebur <ryanryan52@gmail.com>
-Build-Depends: debhelper (>= 6.0.0), autotools-dev, libreadline-dev, libncurses-dev
-Standards-Version: 3.8.0
+Build-Depends: debhelper (>= 7.2), autotools-dev, libreadline-dev, libncurses-dev, quilt, bash-completion, automake, autoconf, libtool
+Standards-Version: 3.8.1
+Vcs-Git: git://git.ryan52.info/git/devtodo
+Vcs-Browser: http://git.ryan52.info/?p=devtodo;a=summary
 Homepage: http://swapoff.org/DevTodo
 
 Package: devtodo
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: xsltproc
 Description: hierarchical, prioritised todo list manager
  Manipulate and display a hierarchical (ie "subtasks") and prioritised

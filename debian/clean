@@ -1,0 +1,12 @@
+build-stamp
+configure-stamp
+config.sub
+config.guess
+debian/devtodo.bash-completion
+doc/Makefile.in
+util/Makefile.in
+src/Makefile.in
+configure
+Makefile.in
+aclocal.m4
+config.log
