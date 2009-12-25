@@ -1,0 +1,11 @@
+--- a/doc/devtodo.1.in
++++ b/doc/devtodo.1.in
+@@ -3,7 +3,7 @@
+ .SH "NAME"
+ .LP 
+ todo \- a reminder/task program aimed at developers
+-.SH "SYNPOSIS"
++.SH "SYNOPSIS"
+ .LP 
+ .TP 
+ \fBtodo [\fI<options>\fP]\fP
