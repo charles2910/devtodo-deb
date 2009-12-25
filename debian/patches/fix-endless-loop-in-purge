@@ -3,7 +3,7 @@ http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=516604
 
 --- a/src/TodoDB.cc
 +++ b/src/TodoDB.cc
-@@ -968,12 +968,11 @@
+@@ -947,12 +947,11 @@
  
  unsigned TodoDB::purge(multiset<Todo> &todo, time_t age) {
  unsigned purged = 0;
@@ -19,7 +19,7 @@ http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=516604
  			last->db->setDirty(true);
  			todo.erase(last);
  			++purged;
-@@ -981,6 +980,7 @@
+@@ -960,6 +959,7 @@
  			if (i->child) {
  				purged += purge(*i->child, age);
  			}

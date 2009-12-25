@@ -1,10 +1,8 @@
 http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=539559
 
-diff --git a/src/TodoDB.cc b/src/TodoDB.cc
-index f9289b7..d807cae 100644
 --- a/src/TodoDB.cc
 +++ b/src/TodoDB.cc
-@@ -883,27 +883,6 @@ void TodoDB::view(multiset<Todo> const &todo, int ind) {
+@@ -883,27 +883,6 @@
  				formatItem(cout, ind, todo, options.format["verbose-display"]);
  			else
  				formatItem(cout, ind, todo, options.format["display"]);
@@ -32,7 +30,7 @@ index f9289b7..d807cae 100644
  		}
  
  		//if (todo.filterchildren && !todo.unfilteredchildren) continue;
-@@ -1232,6 +1211,31 @@ Options::Dir dir = Options::Equal;
+@@ -1232,6 +1211,31 @@
  						} else
  							wraptext(out, item.text, i, indent, options.columns);
  					}
