@@ -1,7 +1,7 @@
+misc-changes
 show-comments-in-generate-mode.patch
 fix-manpage-for-tdl
 error-if-cant-open
-misc-changes
 fix-endless-loop-in-purge
 update-todo2xhtml_css
 fix-spelling
