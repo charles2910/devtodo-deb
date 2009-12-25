@@ -1,3 +1,4 @@
+show-comments-in-generate-mode.patch
 fix-manpage-for-tdl
 error-if-cant-open
 misc-changes
