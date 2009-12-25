@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Ryan Niebur <ryan@debian.org>
 Build-Depends: debhelper (>= 7.2), autotools-dev, libreadline-dev, libncurses-dev, quilt, bash-completion, automake, autoconf, libtool
-Standards-Version: 3.8.1
+Standards-Version: 3.8.3
 Vcs-Git: git://git.ryan52.info/git/devtodo
 Vcs-Browser: http://git.ryan52.info/?p=devtodo;a=summary
 Homepage: http://swapoff.org/DevTodo

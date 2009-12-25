@@ -2,8 +2,9 @@ devtodo (0.1.20-6) UNRELEASED; urgency=low
 
   * fix SYNOPSIS spelling in manpage (Closes: #534236)
   * update my email address
+  * set Standards-Version to 3.8.3
 
- -- Ryan Niebur <ryan@debian.org>  Thu, 24 Dec 2009 22:05:26 -0800
+ -- Ryan Niebur <ryan@debian.org>  Thu, 24 Dec 2009 22:05:28 -0800
 
 devtodo (0.1.20-5) unstable; urgency=low
 
