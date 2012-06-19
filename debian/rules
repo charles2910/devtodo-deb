@@ -1,13 +1,11 @@
 #!/usr/bin/make -f
 
-include /usr/share/quilt/quilt.make
-
 destdir=$(CURDIR)/debian/devtodo/
 
 build: build-arch build-indep
 build-arch: build-stamp
 build-indep: build-stamp
-build-stamp: $(QUILT_STAMPFN)
+build-stamp:
 	ln -sf /usr/share/misc/config.sub config.sub
 	ln -sf /usr/share/misc/config.guess config.guess
 	autoreconf
@@ -18,7 +16,7 @@ override_dh_auto_build:
 	cp /usr/bin/libtool ./
 	dh_auto_build
 
-clean: unpatch
+clean:
 	dh clean
 
 install: build
