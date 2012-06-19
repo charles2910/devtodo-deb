@@ -7,7 +7,7 @@ include /usr/share/dpkg/buildflags.mk
 destdir=$(CURDIR)/debian/devtodo/
 
 override_dh_auto_configure:
-	dh_auto_configure -- CFLAGS=$(CFLAGS) CPPFLAGS=$(CPPFLAGS) CXXFLAGS=$(CXXFLAGS) LDFLAGS=$(LDFLAGS)
+	dh_auto_configure -- CFLAGS="$(CFLAGS)" CPPFLAGS="$(CPPFLAGS)" CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
 
 build: build-arch build-indep
 build-arch: build-stamp
