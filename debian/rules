@@ -4,7 +4,9 @@ include /usr/share/quilt/quilt.make
 
 destdir=$(CURDIR)/debian/devtodo/
 
-build: build-stamp
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
 build-stamp: $(QUILT_STAMPFN)
 	ln -sf /usr/share/misc/config.sub config.sub
 	ln -sf /usr/share/misc/config.guess config.guess

@@ -6,8 +6,9 @@ devtodo (0.1.20-6) UNRELEASED; urgency=low
   * show comments in generate mode too (Closes: #539559)
   * Use source format 3.0 quilt
   * Move packaging to collab-maint
+  * Add build-{arch,indep} targets to debian/rules
 
- -- Ryan Niebur <ryan@debian.org>  Mon, 18 Jun 2012 18:06:09 -0700
+ -- Ryan Niebur <ryan@debian.org>  Mon, 18 Jun 2012 18:07:09 -0700
 
 devtodo (0.1.20-5) unstable; urgency=low
 
