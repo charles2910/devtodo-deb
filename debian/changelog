@@ -5,8 +5,9 @@ devtodo (0.1.20-6) UNRELEASED; urgency=low
   * set Standards-Version to 3.8.3
   * show comments in generate mode too (Closes: #539559)
   * Use source format 3.0 quilt
+  * Move packaging to collab-maint
 
- -- Ryan Niebur <ryan@debian.org>  Mon, 18 Jun 2012 18:03:51 -0700
+ -- Ryan Niebur <ryan@debian.org>  Mon, 18 Jun 2012 18:06:09 -0700
 
 devtodo (0.1.20-5) unstable; urgency=low
 
