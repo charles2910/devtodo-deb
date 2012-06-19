@@ -2,7 +2,7 @@ devtodo (0.1.20-6) UNRELEASED; urgency=low
 
   * fix SYNOPSIS spelling in manpage (Closes: #534236)
   * update my email address
-  * set Standards-Version to 3.8.3
+  * set Standards-Version to 3.9.3
   * show comments in generate mode too (Closes: #539559)
   * Use source format 3.0 quilt
   * Move packaging to collab-maint
