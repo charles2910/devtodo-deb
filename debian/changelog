@@ -1,3 +1,14 @@
+devtodo (0.1.20-6.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * debian/control: added dh-autoreconf as build-dep, removed its
+    dependencies and added libtool-bin to fix ftbfs. (Closes: #779551, #723964)
+  * debian/rules
+    - added usage of dh-autoreconf
+    - expanded dh clean to include dh_autoreconf_clean before dh_clean
+
+ -- Fernando Seiti Furusato <ferseiti@linux.vnet.ibm.com>  Wed, 14 Sep 2016 12:21:03 -0400
+
 devtodo (0.1.20-6) unstable; urgency=low
 
   * fix SYNOPSIS spelling in manpage (Closes: #534236)

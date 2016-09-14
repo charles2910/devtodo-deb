@@ -7,15 +7,13 @@ include /usr/share/dpkg/buildflags.mk
 destdir=$(CURDIR)/debian/devtodo/
 
 override_dh_auto_configure:
+	dh_autoreconf
 	dh_auto_configure -- CFLAGS="$(CFLAGS)" CPPFLAGS="$(CPPFLAGS)" CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
 
 build: build-arch build-indep
 build-arch: build-stamp
 build-indep: build-stamp
 build-stamp:
-	ln -sf /usr/share/misc/config.sub config.sub
-	ln -sf /usr/share/misc/config.guess config.guess
-	autoreconf
 	dh build
 	touch build-stamp
 
@@ -24,7 +22,10 @@ override_dh_auto_build:
 	dh_auto_build
 
 clean:
-	dh clean
+	dh_testdir
+	dh_auto_clean
+	dh_autoreconf_clean
+	dh_clean
 
 install: build
 	dh install
