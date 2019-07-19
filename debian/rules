@@ -1,47 +1,20 @@
 #!/usr/bin/make -f
+#export DH_VERBOSE = 1
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-DPKG_EXPORT_BUILDFLAGS = 1
-include /usr/share/dpkg/buildflags.mk
 
-destdir=$(CURDIR)/debian/devtodo/
+%:
+	dh $@
 
-override_dh_auto_configure:
-	dh_autoreconf
-	dh_auto_configure -- CFLAGS="$(CFLAGS)" CPPFLAGS="$(CPPFLAGS)" CXXFLAGS="$(CXXFLAGS)" LDFLAGS="$(LDFLAGS)"
+override_dh_link:
+	dh_link
+	rm -f debian/devtodo/usr/bin/tdl debian/devtodo/usr/share/man/man1/tdl.1
 
-build: build-arch build-indep
-build-arch: build-stamp
-build-indep: build-stamp
-build-stamp:
-	dh build
-	touch build-stamp
-
-override_dh_auto_build:
-	cp /usr/bin/libtool ./
-	dh_auto_build
-
-clean:
-	dh_testdir
-	dh_auto_clean
-	dh_autoreconf_clean
-	dh_clean
-
-install: build
-	dh install
-	rm $(destdir)/usr/bin/tdl $(destdir)/usr/share/man/man1/tdl.1.gz
-	cp contrib/devtodo.bash-completion debian/
-	dh_bash-completion
-
-binary-indep: build install
+override_dh_auto_install:
+	dh_auto_install
+	mkdir -p debian/devtodo/usr/share/bash-completion/completioins/
+	cp contrib/devtodo.bash-completion debian/devtodo/usr/share/bash-completion/completioins/devtodo
 
 override_dh_fixperms:
 	dh_fixperms
-	# for scripts.sh and scripts.tcsh
-	chmod 644 $(CURDIR)/debian/devtodo/usr/share/doc/devtodo/examples/scripts.*sh
-
-binary-arch: build install
-	dh binary-arch
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install
+	chmod 644 debian/devtodo/usr/share/doc/devtodo/examples/scripts.*sh

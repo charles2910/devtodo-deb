@@ -1,4 +1,4 @@
-it get's "stuck".
+it gets "stuck".
 http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=516604
 
 --- a/src/TodoDB.cc
