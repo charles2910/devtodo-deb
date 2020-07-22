@@ -10,6 +10,7 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
       - Migrated to 1.0 format.
       - Updated all data.
   * debian/docs: removed debian/TODO. Already installed automatically.
+  * debian/salsa-ci.yml: added to provide CI tests for Salsa.
   * debian/upstream/metadata: created.
   * debian/watch:
       - Bumped version to 4.
