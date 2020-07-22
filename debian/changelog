@@ -1,7 +1,8 @@
 devtodo (0.1.20-8) UNRELEASED; urgency=medium
 
   * QA upload.
-  *
+  * debian/control:
+      - Bumped debhelper-compat to 13.
 
  -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Wed, 22 Jul 2020 14:37:15 -0300
 
