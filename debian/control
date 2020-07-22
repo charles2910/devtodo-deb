@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends: debhelper-compat (= 13), libreadline-dev, libncurses-dev, bash-completion, libtool-bin, dpkg-dev (>= 1.16.1~)
 Standards-Version: 4.5.0
+Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/debian/devtodo.git
 Vcs-Browser: https://salsa.debian.org/debian/devtodo
 Homepage: http://swapoff.org/DevTodo
