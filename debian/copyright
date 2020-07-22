@@ -1,60 +1,60 @@
-This package was debianized by Arthur Korn <arthur@korn.ch> on
-Tue, 20 Mar 2001 20:24:53 +0100.
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: devtodo
+Upstream-Contact: https://github.com/alecthomas/devtodo/issues
+Source: https://swapoff.org/devtodo1.html
 
-It was downloaded from http://swapoff.org/DevTodo
+Files: *
+Copyright: 2000-2007 Alec Thomas <alec@swapoff.org>
+License: GPL-2
 
-Upstream Author:
-Copyright (c) 2000-2007 Alec Thomas <alec.at.swapoff.org>
-with contributions from David Furodet, Michael Tilstra, Erin Quinlan, Mark Eichen, Anreas Amann, Arthur Korn, Philippe Chiasson, Matt Kraai, Matthew Russel, and Stephean Hegel.
-This program is distributed under the terms of the GPL, see below
-
-contrib/devtodo.bash-completion is Copyright Aaron Walker <ka0ttic@gentoo.org> and is distributed under the terms of the GPL, see below
-contrib/tdrec is Copyright Brian Herlihy and is distributed under the terms of the GPL, see below
-contrib/todo2xhtml_css.xslt and contrib/todo.css are Copyright (c) 2004-2005 Francesco Poli, <frx@firenze.linux.it> and distributed under the terms of the MIT license, see below, with an exception (see below)
-contrib/todo2pdf.xslt is Copyright _Mark_ <eichin@thok.org>
-contrib/todo2html-2.xslt is Copyright Daniel Patterson
-contrib/todo-nodone-html.xslt and contrib/todo2html.xslt are based on Daniel Patterson's version, and is Copyright Mark Eichin
-
-The Debian packaging is Copyright (c) 2001-2008 Arthur Korn and
-Copyright (c) 2009 Ryan Niebur, and is distributed under the terms of
-the GPL version 2.
-
-GPL:
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 1, or (at your option)
-    any later version.
-    On Debian GNU/Linux systems, the complete text of the GNU General
-    Public License can be found in `/usr/share/common-licenses/GPL'
-
-GPLv2:
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; version 2 dated June, 1991.
-    On Debian GNU/Linux systems, the complete text of version 2 of the GNU
-    General Public License can be found in `/usr/share/common-licenses/GPL-2
-
-MIT:
-    Permission is hereby granted, free of charge, to any person obtaining
-    a copy of this software and associated documentation files (the
-    "Software"), to deal in the Software without restriction, including
-    without limitation the rights to use, copy, modify, merge, publish,
-    distribute, sublicense, and/or sell copies of the Software, and to
-    permit persons to whom the Software is furnished to do so, subject to
-    the following conditions:
-
-    The above copyright notice and this permission notice shall be included
-    in all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-contrib/todo2xhtml_css.xslt's exception:
+Files: contrib/todo.css
+       contrib/todo2xhtml_css.xslt
+Copyright: 2004-2005 Francesco Poli <frx@firenze.linux.it>
+License: MIT
+Comment: contrib/todo2xhtml_css.xslt's exception:
     As a special exception, when parts of this file are copied by the XSLT
     transformation into an output file, you may use that output file without
     restriction.
+
+Files: debian/*
+Copyright: 2001-2008 Arthur Korn <arthur@debian.org>
+           2009-2012 Ryan Niebur <ryanryan52@gmail.com>
+           2016      Fernando Seiti Furusato <ferseiti@linux.vnet.ibm.com>
+           2019      Diego Sarzi <diegosarzi@gmail.com>
+           2020      Carlos Henrique Lima Melara <charlesmelara@outlook.com>
+License: GPL-2
+
+License: GPL-2
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 of the License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
