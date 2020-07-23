@@ -4,16 +4,11 @@
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
-	dh $@
+	dh $@ --with bash-completion
 
 override_dh_link:
 	dh_link
 	rm -f debian/devtodo/usr/bin/tdl debian/devtodo/usr/share/man/man1/tdl.1
-
-override_dh_auto_install:
-	dh_auto_install
-	mkdir -p debian/devtodo/usr/share/bash-completion/completioins/
-	cp contrib/devtodo.bash-completion debian/devtodo/usr/share/bash-completion/completioins/devtodo
 
 override_dh_fixperms:
 	dh_fixperms
