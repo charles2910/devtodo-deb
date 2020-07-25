@@ -2,7 +2,12 @@ Source: devtodo
 Section: utils
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: debhelper-compat (= 13), libreadline-dev, libncurses-dev, bash-completion, libtool-bin, dpkg-dev (>= 1.16.1~)
+Build-Depends: bash-completion,
+               debhelper-compat (= 13),
+               dpkg-dev (>= 1.16.1~),
+               libncurses-dev,
+               libreadline-dev,
+               libtool-bin
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/debian/devtodo.git
@@ -11,7 +16,7 @@ Homepage: https://swapoff.org/DevTodo
 
 Package: devtodo
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: xsltproc
 Description: hierarchical, prioritised todo list manager
  Manipulate and display a hierarchical (ie "subtasks") and prioritised
