@@ -12,7 +12,7 @@ Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/debian/devtodo.git
 Vcs-Browser: https://salsa.debian.org/debian/devtodo
-Homepage: https://swapoff.org/DevTodo
+Homepage: https://swapoff.org/devtodo1
 
 Package: devtodo
 Architecture: any
