@@ -306,7 +306,7 @@ devtodo (0.1.14-2) unstable; urgency=low
   * added uscan watchfile
   * ran todo -T, closes: #155840
   * rules: made DEB_BUILD_OPTIONS policy 3.5.7 compliant
-  * control: Standars-Version: 3.5.8.0
+  * control: Standards-Version: 3.5.8.0
 
  -- Arthur Korn <arthur@korn.ch>  Wed, 11 Dec 2002 23:48:54 +0100
 
