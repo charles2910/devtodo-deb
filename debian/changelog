@@ -15,6 +15,7 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
   * debian/copyright:
       - Migrated to 1.0 format.
       - Updated all data.
+  * debian/dirs: removed. debian/install already creates the directory.
   * debian/docs: removed debian/TODO. Already installed automatically.
   * debian/rules: replaced override_dh_auto_install with dh_bash-completion
     addon for the installation of bash-completion code.
