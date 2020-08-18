@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Build-Depends: bash-completion,
                debhelper-compat (= 13),
-               dpkg-dev (>= 1.16.1~),
                libncurses-dev,
                libreadline-dev,
                libtool-bin
