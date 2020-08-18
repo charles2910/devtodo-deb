@@ -17,7 +17,7 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
       - Updated all data.
   * debian/docs: removed debian/TODO. Already installed automatically.
   * debian/rules: replaced override_dh_auto_install with dh_bash-completion
-    for the installation of bash-completion code.
+    addon for the installation of bash-completion code.
   * debian/salsa-ci.yml: added to provide CI tests for Salsa.
   * debian/upstream/metadata: created.
   * debian/watch:
