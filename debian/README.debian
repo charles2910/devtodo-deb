@@ -1,6 +1,12 @@
 README for the devtodo Debian package
 =====================================
 
+Since tdl is not on Debian repositories anymore (see #742333), I have
+reintroduced the tdl provided by this program as well as its manpage
+(both are symlinks to devtodo and its manpage).
+
+ -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Wed, 18 Aug 2020 19:37:15 -0300
+
 tdl is not available because of a conflict with the "tdl" package. Use
 --link to link databases.
 

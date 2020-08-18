@@ -2,6 +2,7 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
 
   * QA upload.
   * Ran wrap-and-sort.
+  * debian/README.debian: added information about reintroduction of tdl.
   * debian/bash-completion: created to indicate bash-completion file.
   * debian/clean: removed unnecessary debian/devtodo.bash-completion item.
   * debian/control:
@@ -19,8 +20,11 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
   * debian/docs:
       - Added AUTHORS from upstream source.
       - Removed debian/TODO. Already installed automatically.
-  * debian/rules: replaced override_dh_auto_install with dh_bash-completion
-    addon for the installation of bash-completion code.
+  * debian/rules:
+      - Removed override_dh_link to install tdl again. There is no conflict
+        anymore since tdl package has been removed from Debian.
+      - Replaced override_dh_auto_install with dh_bash-completion addon for
+        the installation of bash-completion code.
   * debian/salsa-ci.yml: added to provide CI tests for Salsa.
   * debian/upstream/metadata: created.
   * debian/watch:

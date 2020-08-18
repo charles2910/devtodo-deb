@@ -6,10 +6,6 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 %:
 	dh $@ --with bash-completion
 
-override_dh_link:
-	dh_link
-	rm -f debian/devtodo/usr/bin/tdl debian/devtodo/usr/share/man/man1/tdl.1
-
 override_dh_fixperms:
 	dh_fixperms
 	chmod 644 debian/devtodo/usr/share/doc/devtodo/examples/scripts.*sh
