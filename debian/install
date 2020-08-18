@@ -1,2 +1,2 @@
-contrib/ usr/share/devtodo/
-debian/todorc etc/
+contrib/       usr/share/devtodo/
+debian/todorc  etc/
