@@ -4,7 +4,8 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
   * Ran wrap-and-sort.
   * debian/README.debian: added information about reintroduction of tdl.
   * debian/bash-completion: created to indicate bash-completion file.
-  * debian/clean: removed unnecessary debian/devtodo.bash-completion item.
+  * debian/clean: removed. Bash completion script is handled by the addon
+    and autotools files are handled by autoreconf.
   * debian/control:
       - Added 'Rules-Requires-Root: no' to source stanza.
       - Bumped debhelper-compat to 13.
