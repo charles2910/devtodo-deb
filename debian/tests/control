@@ -1,0 +1,5 @@
+Test-Command: devtodo --help
+Restrictions: superficial
+
+Test-Command: devtodo --version
+Restrictions: superficial
