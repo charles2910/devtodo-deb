@@ -30,6 +30,7 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
         anymore since tdl package has been removed from Debian.
       - Replaced override_dh_auto_install with dh_bash-completion addon.
   * debian/salsa-ci.yml: added to provide CI tests for Salsa.
+  * debian/tests/*: created to provide CI tests for the package.
   * debian/upstream/metadata: created.
   * debian/watch:
       - Bumped version to 4.

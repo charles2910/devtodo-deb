@@ -3,3 +3,5 @@ Restrictions: superficial
 
 Test-Command: devtodo --version
 Restrictions: superficial
+
+Tests: add_task,purge_tasks,rm_tasks_and_db_file

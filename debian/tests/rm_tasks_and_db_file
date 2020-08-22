@@ -1,0 +1,5 @@
+cd $AUTOPKGTEST_TMP
+tda -p medium 'Add test task' 2>&1
+tda -p medium 'Add second task'
+devtodo --remove 1,2
+ls -a | grep -L .todo
