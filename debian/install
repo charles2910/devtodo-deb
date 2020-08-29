@@ -1,2 +1,7 @@
-contrib/       usr/share/devtodo/
-debian/todorc  etc/
+contrib/*.xslt         usr/share/devtodo/
+contrib/changelog2html usr/share/devtodo/
+contrib/changelog2todo usr/share/devtodo/
+contrib/tdrec          usr/share/devtodo/
+contrib/todo.css       usr/share/devtodo/
+contrib/todo2pdf.sh    usr/share/devtodo/
+debian/todorc          etc/
