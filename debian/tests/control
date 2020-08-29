@@ -4,5 +4,5 @@ Restrictions: superficial, allow-stderr
 Test-Command: devtodo --version
 Restrictions: superficial, allow-stderr
 
-Tests: add_task,purge_tasks,rm_tasks_and_db_file
+Tests: add-task,purge-tasks,rm-tasks-and-db-file
 Restrictions:allow-stderr
