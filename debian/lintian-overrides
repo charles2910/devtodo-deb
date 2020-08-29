@@ -1,2 +1,0 @@
-# Devtodo generates a report of tasks in HTML. For that it uses the css file.
-devtodo: package-contains-documentation-outside-usr-share-doc usr/share/devtodo/contrib/todo.css
