@@ -1,4 +1,4 @@
-devtodo (0.1.20-8) UNRELEASED; urgency=medium
+devtodo (0.1.20-8) unstable; urgency=medium
 
   * QA upload.
   * Ran wrap-and-sort.
@@ -39,7 +39,7 @@ devtodo (0.1.20-8) UNRELEASED; urgency=medium
       - Bumped version to 4.
       - Updated regular expression and website address.
 
- -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Wed, 22 Jul 2020 14:37:15 -0300
+ -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Mon, 14 Sep 2020 21:58:52 -0300
 
 devtodo (0.1.20-7) unstable; urgency=medium
 
