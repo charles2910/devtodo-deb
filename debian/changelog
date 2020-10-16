@@ -1,6 +1,7 @@
 devtodo (0.1.20+git20200830.0ad52b0) UNRELEASED; urgency=medium
 
   * New upstream version 0.1.20+git20200830.0ad52b0
+  * New maintainer. (Closes: #856286)
 
  -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Fri, 16 Oct 2020 12:44:36 -0300
 
