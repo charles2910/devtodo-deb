@@ -1,6 +1,6 @@
-devtodo (0.1.20+git20200830.0ad52b0) UNRELEASED; urgency=medium
+devtodo (0.1.20+git20200830.0ad52b0-1) UNRELEASED; urgency=medium
 
-  * New upstream version 0.1.20+git20200830.0ad52b0
+  * New upstream release.
   * New maintainer. (Closes: #856286)
   * debian/patches: removed. All patches incorporated by the upstream.
 
