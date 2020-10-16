@@ -1,3 +1,9 @@
+devtodo (0.1.20+git20200830.0ad52b0) UNRELEASED; urgency=medium
+
+  * New upstream version 0.1.20+git20200830.0ad52b0
+
+ -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Fri, 16 Oct 2020 12:44:36 -0300
+
 devtodo (0.1.20-8) unstable; urgency=medium
 
   * QA upload.
