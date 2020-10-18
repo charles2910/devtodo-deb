@@ -10,6 +10,7 @@ License: GPL-2
 Files: contrib/todo.css
        contrib/todo2xhtml_css.xslt
 Copyright: 2004-2005 Francesco Poli <frx@firenze.linux.it>
+           2005      Arthur Korn <arthur@korn.ch>
 License: MIT
 Comment: contrib/todo2xhtml_css.xslt's exception:
     As a special exception, when parts of this file are copied by the XSLT
