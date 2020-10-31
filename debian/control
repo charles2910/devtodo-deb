@@ -18,10 +18,10 @@ Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: xsltproc
 Description: hierarchical, prioritised todo list manager
- Manipulate and display a hierarchical (ie "subtasks") and prioritised
+ Manipulate and display a hierarchical (i.e. "subtasks") and prioritised
  list of things with a coloured command line interface.
  .
- Using devtodos output formatting features, it is possible to convert
+ Using devtodo's output formatting features, it is possible to convert
  the todo list into almost any text format.
  .
  Devtodo comes with XSLT stylesheets to convert XML .todo files to HTML
