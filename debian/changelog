@@ -4,7 +4,10 @@ devtodo (0.1.20+git20200830.0ad52b0-1) UNRELEASED; urgency=medium
   * New maintainer. (Closes: #856286)
   * debian/control: improved some details in long description.
   * debian/copyright: updated upstream copyright holders.
-  * debian/patches: removed. All patches incorporated by the upstream.
+  * debian/patches/:
+      - Removed all old patches. Incorporated by the upstream.
+      - 010_todorc-fix-for-debian.patch: created to incorporate debian/todorc
+        config file in upstream version which is now installed by default.
 
  -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Fri, 16 Oct 2020 12:44:36 -0300
 
