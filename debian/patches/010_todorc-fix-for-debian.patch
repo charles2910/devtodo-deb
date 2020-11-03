@@ -1,10 +1,10 @@
-Description: fixes a path for debian and turn paranoid mode on by default
+Description: incorporates the debian/todorc in the upstream config file
+ It fixes a path in debian, turn paranoid mode on by default and print one
+ item per line in verbose mode.
 Author: Carlos Henrique Lima Melara <charlesmelara@outlook.com>
 Forwarded: not-needed
 Last-Update: 2020-11-01
 
-Index: devtodo/doc/todorc.example
-===================================================================
 --- devtodo.orig/doc/todorc.example
 +++ devtodo/doc/todorc.example
 @@ -19,7 +19,7 @@ filter -children
