@@ -7,6 +7,10 @@ Files: *
 Copyright: 2000-2007 Alec Thomas <alec@swapoff.org>
 License: GPL-2
 
+Files: util/c_regex.*
+Copyright: 1985-2001 Free Software Foundation, Inc.
+License: GPL-2+
+
 Files: contrib/todo.css
        contrib/todo2xhtml_css.xslt
 Copyright: 2004-2005 Francesco Poli <frx@firenze.linux.it>
@@ -29,6 +33,23 @@ License: GPL-2
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; version 2 of the License.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License or
+ (at your option) any later version.
  .
  This package is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
