@@ -1,4 +1,4 @@
 cp .todo $AUTOPKGTEST_TMP/.todo
 cd $AUTOPKGTEST_TMP
 devtodo --purge
-grep -L done= .todo
+grep -L done= .todo | grep .todo
