@@ -1,4 +1,4 @@
-devtodo (0.1.20+git20200830.0ad52b0-1) UNRELEASED; urgency=medium
+devtodo (0.1.20+git20200830.0ad52b0-1) unstable; urgency=medium
 
   * New upstream release.
   * New maintainer. (Closes: #856286)
@@ -15,7 +15,7 @@ devtodo (0.1.20+git20200830.0ad52b0-1) UNRELEASED; urgency=medium
     to changes in the behaviour of the -L option in grep 3.6. (Closes: #975455)
   * debian/todorc: removed.
 
- -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Fri, 16 Oct 2020 12:44:36 -0300
+ -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Sun, 22 Nov 2020 22:02:50 -0300
 
 devtodo (0.1.20-8) unstable; urgency=medium
 
