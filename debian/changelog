@@ -2,7 +2,9 @@ devtodo (0.1.20+git20200830.0ad52b0-1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * New maintainer. (Closes: #856286)
-  * debian/control: improved some details in long description.
+  * debian/control:
+      - Bumped Standards-Version to 4.5.1.
+      - Improved some details in long description.
   * debian/copyright: updated upstream copyright holders.
   * debian/install: removed the debian/todorc line.
   * debian/patches/:

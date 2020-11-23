@@ -7,7 +7,7 @@ Build-Depends: bash-completion,
                libncurses-dev,
                libreadline-dev,
                libtool-bin
-Standards-Version: 4.5.0
+Standards-Version: 4.5.1
 Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/debian/devtodo.git
 Vcs-Browser: https://salsa.debian.org/debian/devtodo
