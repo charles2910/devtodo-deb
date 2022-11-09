@@ -1,0 +1,23 @@
+Description: fix compiler error due to patch 020*
+Author: Carlos Henrique Lima Melara <charlesmelara@outlook.com>
+Forwarded: https://github.com/alecthomas/devtodo/pull/6
+Last-Update: 2022-11-09
+
+---
+ src/support.cc | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/src/support.cc b/src/support.cc
+index 2e1db56..46f52fa 100644
+--- a/src/support.cc
++++ b/src/support.cc
+@@ -734,8 +734,7 @@ static int init_rl() {
+ string readText(string const &prompt, string existing) {
+ string out;
+ 
+-	rl_startup_hook = (int(*)(const char*, int))init_rl;
+-
++	rl_startup_hook = (int(*)())init_rl;
+ 	rl_buffer = &existing;
+ char const *tmp = readline(const_cast<char*>(prompt.c_str()));
+ 	if (tmp) out = tmp;

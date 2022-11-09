@@ -1,2 +1,3 @@
 010_todorc-fix-for-debian.patch
 020_use-libedit-readline-compat-layer.patch
+030_fix-compiler-error.patch
