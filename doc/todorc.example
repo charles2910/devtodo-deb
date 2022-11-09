@@ -19,7 +19,7 @@ filter -children
 #summary
 
 # Be generally paranoid about file ownerships and permissions
-#paranoid
+paranoid
 
 # The database to use if --global or -G is specified
 global-database $HOME/.todo_global
@@ -41,8 +41,8 @@ sort -done,priority,-created,-text
 #format date=%m/%d/%y, %H:%M
 
 # Default display format
-#format display=%4>%i%[info]%f%2n.%[priority]%+1T
-#format verbose-display=%4>%i%[info]%f%2n.(added %c) %[priority]%+1T
+#format display=%4>%i%[info]%f%2n.%[priority]%+1T\n
+#format verbose-display=%4>%i%[info]%f%2n.(added %c) %[priority]%+1T\n
 #format generated=%2>%i- %+1T\n
 #format verbose-generated=%2>%i- (added %c, completed %d) %+1T\n
 
@@ -61,7 +61,8 @@ sort -done,priority,-created,-text
 # This requires the libxslt library from xmlsoft.org in addition to the XSLT
 # file in the devtodo contrib directory.
 #on save {
-#   exec xsltproc /home/athomas/projects/todo/contrib/todo2html.xslt $TODODB > `dirname $TODODB`/.todo.html
+#   echo HTML created
+#   exec xsltproc /usr/share/devtodo/todo2html.xslt $TODODB > `dirname $TODODB`/.todo.html
 #   exec chmod 600 `dirname $TODODB`/.todo.html
 #}
 
