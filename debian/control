@@ -5,7 +5,7 @@ Maintainer: Carlos Henrique Lima Melara <charlesmelara@outlook.com>
 Build-Depends: bash-completion,
                debhelper-compat (= 13),
                libncurses-dev,
-               libreadline-dev,
+               libeditreadline-dev,
                libtool-bin
 Standards-Version: 4.6.1
 Rules-Requires-Root: no
