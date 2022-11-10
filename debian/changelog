@@ -1,3 +1,17 @@
+devtodo (0.1.20+git20200830.0ad52b0-2) unstable; urgency=medium
+
+  * debian/control:
+      - Bumped Standards-Version to 4.6.1 - no changes needed.
+      - Changed Build-Depends from libreadline-dev to libeditreadline-dev.
+        (Closes: #979101)
+  * debian/copyright: updated packaging copyright years.
+  * debian/gbp.conf: added gbp.conf file.
+  * debian/patches/:
+      - 020_use-libedit-readline-compat-layer.patch: added.
+      - 030_fix-compiler-error.patch: added.
+
+ -- Carlos Henrique Lima Melara <charlesmelara@outlook.com>  Thu, 10 Nov 2022 11:27:55 -0300
+
 devtodo (0.1.20+git20200830.0ad52b0-1) unstable; urgency=medium
 
   * New upstream release.
